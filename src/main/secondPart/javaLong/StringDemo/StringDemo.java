@@ -1,4 +1,4 @@
-package main.secondPart.stringDemo;
+package main.secondPart.javaLong.StringDemo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
