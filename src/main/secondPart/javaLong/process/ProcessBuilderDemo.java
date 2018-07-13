@@ -10,8 +10,6 @@ public class ProcessBuilderDemo {
 	public void test1() throws IOException {
 		ProcessBuilder p = new ProcessBuilder("notepad.exe","F:// textfile");
 		p.start();
-		
-		
 	}
 
 }
