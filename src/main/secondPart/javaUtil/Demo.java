@@ -1,4 +1,4 @@
-package main.secondPart.util;
+package main.secondPart.javaUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;

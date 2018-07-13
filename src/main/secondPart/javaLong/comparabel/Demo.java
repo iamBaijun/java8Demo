@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Spliterator;
+import java.util.TreeSet;
 
 import org.junit.Test;
 
@@ -46,6 +47,14 @@ public class Demo {
 		});
 			
 	}
+	/**   
+	 * @Title: test2   
+	 * @author:baijun
+	 * @Description: 排序
+	 * @date:2018年7月13日上午11:16:29      
+	 * void      
+	 * @throws   
+	 */
 	@Test
 	public void test2() {
 		List<Integer> list = new ArrayList<Integer>();
@@ -56,8 +65,6 @@ public class Demo {
 		list.add(1);
 		list.add(3);
 		list.sort((n,m)->{
-			System.out.println(n);
-			System.out.println(m);
 			return m-n;
 		});
 		System.out.println(list);
@@ -70,6 +77,23 @@ public class Demo {
 			}
 			
 		});
+		System.out.println(list);
 	}
 	
+	/**   
+	 * @Title: test3   
+	 * @author:baijun
+	 * @Description:比较器 
+	 * @date:2018年7月13日上午11:17:31      
+	 * void      
+	 * @throws   
+	 */
+	@Test
+	public void test3() {
+		TreeSet<String> strs = new TreeSet<String>((str1,str2)->str2.compareTo(str1));
+		strs.add("zhangsan");
+		strs.add("guojing");
+		strs.forEach((n)->System.out.println(n));
+		
+	}
 }
