@@ -14,7 +14,7 @@ public class OutputStreamDemo {
 	public void test1() throws IOException {
 		OutputStream os = new FileOutputStream(path,true);
 		String str = "ÄãºÃ";
-		byte[] buff = str.getBytes("utf-8");
+		byte[] buff = str.getBytes();
 		os.write(buff);
 		os.flush();
 		os.close();

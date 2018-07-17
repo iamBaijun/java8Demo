@@ -1,5 +1,7 @@
 package main.secondPart.entity;
 
+import java.io.Serializable;
+
 /**   
  * @ClassName:  User   
  * @Description:clone() 方法，必须先实现Cloneable 接口   
@@ -8,7 +10,18 @@ package main.secondPart.entity;
  *     
  * @Copyright: 2018  
  */  
-public class User implements Cloneable{
+public class User implements Cloneable,Serializable{
+	public User(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	private String id;
 	private String name;
 	public String getId() {
@@ -25,7 +38,7 @@ public class User implements Cloneable{
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + "]";
+		return "id=" + id + ", name=" + name ;
 	}
 	
 	public User clobe() throws CloneNotSupportedException {
