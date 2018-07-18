@@ -26,7 +26,7 @@ public class Demo2 {
 			MappedByteBuffer mbb = fc.map(FileChannel.MapMode.READ_ONLY, 0, size);
 			
 			for(int i=0;i<size;i++) {
-				System.out.print(mbb.get());
+				System.out.print((char)mbb.get());
 			}
 		}catch(IOException e) {
 			e.printStackTrace();
